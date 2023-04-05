@@ -6,8 +6,13 @@ $(document).ready(function() {
     //document.querySelector('header button').addEventListener('click', function() {})
 
     //[JQuery]
-    $('header button').click(function () {
-        alert(`Expandir formulário`)
+    $('header button').click(function() {
+        //alert(`Expandir formulário`)
+        $('form').slideDown();
+    })
+
+    $('#botao-cancelar').click(function() {
+        $('form').slideUp();
     })
     
     $('form').on('submit', function(e) {
